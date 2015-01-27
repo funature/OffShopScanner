@@ -30,8 +30,9 @@ while 1:
     ScanCode= raw_input("\nScan... : ")
 
     # Check if END is typed and leave while loop
+    #print (ScanCode.encode("hex"))
     if(ScanCode == "END"):
-        print ("Purchased finisched")
+        print ("Purchased finished")
         break
 
     # send request to server and get descripton and price back
