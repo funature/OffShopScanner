@@ -24,6 +24,6 @@ do
   qrsvg=`cat ./qrcode/$nameIdx.svg | cut -c 90- | sed "s/svg://g" | sed "s/<\/svg>//g"`
 
   echo "ID: $shopId :: $fname $lname"
-  cat default.svg | sed -e "s@USER_QR@$qrsvg@g" -e "s/USER_NAME/$fname $lname/g" -e "s/USER_ID/$shopId/g" > ./cards/$fname-$lname.svg
+  cat default.svg | sed -e "s@<!--USER_QR-->@$qrsvg@g" -e "s/USER_FNAME/$fname/g" -e "s/USER_LNAME/$lname/g" -e "s/USER_ID/$shopId/g" > ./cards/$fname-$lname.svg
 
 done

@@ -15,15 +15,16 @@ xmlns:ev="http://www.w3.org/2001/xml-events"
 <polygon points="250,6 330,185 370,185 290,6" style="fill:orange" />
 
 <!--Copy code from svg file without "svg:" -->
-USER_QR
+<!--USER_QR-->
 
 <text x="140" y="30" fill="black" style="font-size:20px">NoVolume</text>
 <text x="140" y="50" fill="black" style="font-size:16px">Hackerspace WHV</text>
 <!--Insert name and ID-->
-<text x="140" y="80" fill="black" style="font-size:18px">USER_NAME</text>
-<text x="140" y="105" fill="black" style="font-size:16px">USER_ID</text>
+<text x="140" y="80" fill="black" style="font-size:18px">USER_FNAME</text>
+<text x="140" y="100" fill="black" style="font-size:18px">USER_LNAME</text>
+<text x="140" y="130" fill="black" style="font-size:16px">USER_ID</text>
 
-<text x="60" y="155" fill="black" style="font-size:16px">http://www.novolulme.de</text>
+<text x="60" y="165" fill="black" style="font-size:16px">http://www.novolulme.de</text>
 
 
 </svg>
