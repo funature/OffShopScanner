@@ -15,10 +15,9 @@ do
 	then
 		echo "::Finished"
 		break
-	fi	
-	
+	fi
+
 	echo $nameId
 
-	qr --factory=svg-fragment $nameId > $nameId.svg
+	qr --factory=svg-fragment $nameId > ./qrcode/$nameId.svg
 done
-

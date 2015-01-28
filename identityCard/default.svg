@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:ev="http://www.w3.org/2001/xml-events"
+     version="1.1" baseProfile="full"
+     width="85mm" height="54mm">
+
+<polygon points="-75,6 10,185 50,185 -40,6" style="fill:orange" />
+<polygon points="10,6 90,185 130,185 50,6" style="fill:orange" />
+<polygon points="90,6 170,185 210,185 130,6" style="fill:orange" />
+<polygon points="170,6 250,185 290,185 210,6" style="fill:orange" />
+<polygon points="250,6 330,185 370,185 290,6" style="fill:orange" />
+
+<!--Copy code from svg file without "svg:" -->
+USER_QR
+
+<text x="140" y="30" fill="black" style="font-size:20px">NoVolume</text>
+<text x="140" y="50" fill="black" style="font-size:16px">Hackerspace WHV</text>
+<!--Insert name and ID-->
+<text x="140" y="80" fill="black" style="font-size:18px">USER_NAME</text>
+<text x="140" y="105" fill="black" style="font-size:16px">USER_ID</text>
+
+<text x="60" y="155" fill="black" style="font-size:16px">http://www.novolulme.de</text>
+
+
+</svg>
