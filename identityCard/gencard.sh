@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-
-
+#
+# Felix Schulze 28/01/2015 for NoVolume WHV
+#
 
 for((i=2; i <102; i++))
 do
@@ -9,7 +10,7 @@ do
 
 
   #cp for String compare
-  S1=`echo $nameId | awk '{print substr($0,11)}'`
+  S1=`echo $nameId | cut -c 11- | cut -c -2`
   S2=",,"
 
   if [ "$S1" = "$S2" ];
