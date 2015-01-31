@@ -10,12 +10,11 @@ do
 	nameId=`head -n $i ./member.csv | tail -n 1 | tr -d "\n" | tr -d "\r"`
 
 	#cp for String compare
-	S1=`echo $nameId | cut -c 11- | cut -c -2`
-	S2=",,"
+	S1=`echo $nameId`
 
-	if [ "$S1" = "$S2" ];
-	then
-		echo "::Finished"
+	if [ "$S1" = "END,,"  ];
+		then
+		echo "::  Finished"
 		break
 	fi
 
