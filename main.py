@@ -11,11 +11,24 @@ def searchCode(ScanCode):
     # send Ean-Code to Novolume OffShop Server
     # and get item description and price
     # if item could not be found send item = 0 !
-    item = "Coke 0.5l"
-    # return price as string !
-    price = "1.00"
+
+    if (ScanCode == "54490123"):
+        item = "Coke 0.5l"
+        # return price as string !
+        price = "1.00"
+        requestURL()
+        return item, price
+    
+    item = "Unkown"
+    price = "9000"
 
     return item, price
+
+def requestURL():
+
+    response = urllib2.urlopen('http://127.0.0.1/OFFShop/shop.php?idItem=133707&nameItem=12421&preisItem=1241&submitinsertUser=insertItem')
+    print 'RESPONSE:', response
+    print 'URL     :', response.geturl()
 
 
 
