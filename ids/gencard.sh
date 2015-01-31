@@ -2,6 +2,8 @@
 #
 # Felix Schulze 28/01/2015 for NoVolume WHV
 #
+# This Script generate the ID-Cards for the shop members
+#
 
 for((i=2; i <102; i++))
 do
@@ -10,13 +12,13 @@ do
 
 
   #cp for String compare
-  S1=`echo $nameId | cut -c 11- | cut -c -2`
-  S2=",,"
+  S1=`echo $nameId`
 
-  if [ "$S1" = "$S2" ];
-  then
+  if [ "$S1" = "END,,"  ];
+    then
     echo "::  Finished"
     break
+    fireak
   fi
 
   fname=`echo $nameId | cut -f 3 -d ","`
