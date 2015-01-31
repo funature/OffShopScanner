@@ -15,7 +15,7 @@ do
   url="http://SERVER_DEST_IP/OFFShop/shop.php?idItem=ITEM_CODE&nameItem=ITEM_DESC&preisItem=ITEM_PRICE&submitinsertUser=insertItem"
   url=`echo $url | sed "s@SERVER_DEST_IP@$SERVER_IP@g"`
 
-  #cp for String compare
+  #cp for String compa
   S1=`echo $itemId`
 
   if [ "$S1" = "END,,"  ];
@@ -28,9 +28,10 @@ do
   itemDesc=`echo $itemId | cut -f 2 -d ","`
   itemPrice=`echo $itemId | cut -f 3 -d ","`
 
-
   url=`echo $url | sed -e "s/ITEM_CODE/$itemCode/g" -e "s/ITEM_DESC/$itemDesc/g" -e "s/ITEM_PRICE/$itemPrice/g"`
-  wget $url -q -O /dev/null
+
+  wget $url -O /dev/null
+  echo $url
   echo -e "[ \033[32mAdd\033[0m ] --> ID: $itemCode :: $itemDesc $itemPrice"
 
 done
